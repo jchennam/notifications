@@ -57,26 +57,12 @@ export default class IntranetNotificationApplicationCustomizer
       { onDispose: this._onDispose }
     );
 
-    var inlineStyles = {backgroundColor:'red', fontSize:20};
-
     const element: React.ReactElement<IIntranetComponentProps> = React.createElement(
       IntranetComponent,
       {}
     ); 
-    //Dialog.alert(`Hello all from ${strings.Title}:\n\n`);
-
-    
-    ReactDOM.render(element, this._topPlaceholder.domElement);
-    console.log(element);
-    if (this._topPlaceholder.domElement) {
-     /*   this._topPlaceholder.domElement.innerHTML = `
-      <div class="${styles.app}">
-        <div class="${styles.top}">
-          <i class="ms-Icon ms-Icon--Info" aria-hidden="true"></i> testing....
-        </div>
-      </div>`;   */
-      
-    }
+     
+    ReactDOM.render(element, this._topPlaceholder.domElement); 
     }
   }
 
