@@ -7,11 +7,11 @@ import {
   PlaceholderContent,
   PlaceholderName
 } from '@microsoft/sp-application-base';
-import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'IntranetNotificationApplicationCustomizerStrings';
 import pnp from 'sp-pnp-js/lib/pnp';
 import styles from './components/IntranetComponent.module.scss';
+
 import IntranetComponent, {IIntranetComponentProps} from './components/IntranetComponent.js';
 
 const LOG_SOURCE: string = 'IntranetNotificationApplicationCustomizer';
@@ -51,6 +51,7 @@ export default class IntranetNotificationApplicationCustomizer
 
      // Handling the top placeholder
   if (!this._topPlaceholder) {
+    const css = require('../../../node_modules/react-responsive-carousel/lib/styles/carousel.css');
     this._topPlaceholder = this.context.placeholderProvider.tryCreateContent(
       PlaceholderName.Top,
       { onDispose: this._onDispose }
