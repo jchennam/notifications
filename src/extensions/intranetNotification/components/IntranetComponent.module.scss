@@ -1,0 +1,30 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.top {
+      height:40px;
+      text-align:center;
+      line-height:2.5;
+      font-weight:bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $ms-color-themePrimary;
+      color: $ms-color-white;
+      white-space: nowrap;
+     width:80%;
+     margin:0 auto;
+
+  }
+  .notificationText{
+      color: $ms-color-white;
+      font: bold;
+  }
+/* 
+  .Marquee{
+    display:block;
+    overflow-x: hidden;
+  }
+
+  .MarqueeContent{
+      display:inline-block;
+  } */

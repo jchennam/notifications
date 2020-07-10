@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="IntranetNotification"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="3cb104d6-7640-4db7-ac8d-1c31975bd20f"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>
