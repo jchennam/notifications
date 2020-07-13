@@ -33,7 +33,6 @@ export default class IntranetComponent extends React.Component<
   }
 
   public render() {
-    debugger;
     if (!this.state.noItems) {
       if (this.state.loading) {
         return (React.createElement('div', { class: styles.top }, "Loading Notification items"));
@@ -44,11 +43,13 @@ export default class IntranetComponent extends React.Component<
             <Carousel
               showArrows={false}
               showThumbs={false}
-              autoPlay
+              autoPlay   
+              showStatus = {false}  
+              showIndicators ={true}                       
               infiniteLoop={true}
             >
               {this.state.notificationItems.map((name) => (
-                <div key={name.Title} style={{ height: "50px", color: "#fff" }}>
+                <div key={name.Title} style={{ padding:"15px 0 35px 0", color: "#fff", backgroundColor:"#00385c" }}>
                   {name.Title}
                 </div>
               ))}
