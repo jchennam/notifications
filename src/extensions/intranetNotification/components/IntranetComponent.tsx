@@ -49,7 +49,7 @@ export default class IntranetComponent extends React.Component<
               infiniteLoop={true}
             >
               {this.state.notificationItems.map((name) => (
-                <div key={name.Title} style={{ padding:"15px 0 35px 0", color: "#fff", backgroundColor:"#5b6f4e"}}>
+                <div key={name.Title} className={styles.notificationText} >
                   {name.Title}
                 </div>
               ))}
