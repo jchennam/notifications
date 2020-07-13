@@ -35,7 +35,7 @@ export default class IntranetComponent extends React.Component<
   public render() {
     if (!this.state.noItems) {
       if (this.state.loading) {
-        return (React.createElement('div', { class: styles.top }, "Loading Notification items"));
+        return (React.createElement('div', { class: styles.top }, "Loading..."));
       }
       else {
         return (
@@ -49,7 +49,7 @@ export default class IntranetComponent extends React.Component<
               infiniteLoop={true}
             >
               {this.state.notificationItems.map((name) => (
-                <div key={name.Title} style={{ padding:"15px 0 35px 0", color: "#fff", backgroundColor:"#00385c" }}>
+                <div key={name.Title} style={{ padding:"15px 0 35px 0", color: "#fff", backgroundColor:"#5b6f4e"}}>
                   {name.Title}
                 </div>
               ))}

@@ -1,10 +1,10 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
 .top {
-      height:69px;
+      height:40px;
       text-align:center;
       line-height:2.5;
-      font-weight:bold;
+      //font-weight:bold;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -13,9 +13,5 @@
       white-space: nowrap;
       //margin:0 auto;
 
-  }
-  .notificationText{
-      color: $ms-color-white;
-      font: bold;
   }
 

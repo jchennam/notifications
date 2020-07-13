@@ -10,6 +10,7 @@ import {
 
 import * as strings from 'IntranetNotificationApplicationCustomizerStrings';
 import pnp from 'sp-pnp-js/lib/pnp';
+import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.css';
 import styles from './components/IntranetComponent.module.scss';
 
 import IntranetComponent, {IIntranetComponentProps} from './components/IntranetComponent.js';
@@ -49,9 +50,12 @@ export default class IntranetNotificationApplicationCustomizer
 
   private _renderPlaceHolders(): void {
 
+    if (this._topPlaceholder)
+    this._topPlaceholder.dispose();
+    
      // Handling the top placeholder
   if (!this._topPlaceholder) {
-    const css = require('../../../node_modules/react-responsive-carousel/lib/styles/carousel.css');
+    //const css = require('../../../node_modules/react-responsive-carousel/lib/styles/carousel.css');
     this._topPlaceholder = this.context.placeholderProvider.tryCreateContent(
       PlaceholderName.Top,
       { onDispose: this._onDispose }
