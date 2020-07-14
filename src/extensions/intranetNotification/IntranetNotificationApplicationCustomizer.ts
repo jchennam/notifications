@@ -11,6 +11,7 @@ import {
 import * as strings from 'IntranetNotificationApplicationCustomizerStrings';
 import pnp from 'sp-pnp-js/lib/pnp';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.css';
+import './carouselStyles/carouselCustom.css';
 import styles from './components/IntranetComponent.module.scss';
 
 import IntranetComponent, {IIntranetComponentProps} from './components/IntranetComponent.js';

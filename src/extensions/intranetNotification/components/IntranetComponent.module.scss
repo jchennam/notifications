@@ -1,7 +1,7 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
 .top {
-      height:40px;
+      min-height:40px;
       text-align:center;
       line-height:2.5;
       //font-weight:bold;
@@ -15,12 +15,14 @@
   }
 
 .notificationText{
-    padding:15px 0 35px 0;
+    padding:10px;
     color: #fff;
     background-Color:#5b6f4e;
-    font-family: Verlag A,Verlag B,sans-serif;
+    font-family: "Verlag A","Verlag B",sans-serif;
     font-size: 14px;
+    line-height: 20px;
     font-weight: 400;
-
+    max-width: 90%;
+    margin: 0 auto;
 }
 
