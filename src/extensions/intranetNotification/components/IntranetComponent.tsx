@@ -47,6 +47,7 @@ export default class IntranetComponent extends React.Component<
               showStatus = {false}  
               showIndicators ={true}                       
               infiniteLoop={true}
+              interval={8000}
             >
               {this.state.notificationItems.map((name) => (
                 <div key={name.Title} className={styles.notificationText} >

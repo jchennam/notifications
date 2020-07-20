@@ -68,7 +68,9 @@
 $pioneer-default-font: "Verlag A", "Verlag B", sans-serif;
 $pioneer-secondary-font: "Aleo", sans-serif;
 
-a[class*="siteNavLink-"] {
+a[class*="siteNavLink-"],
+.commandBarWrapper,
+button {
   font-family: $pioneer-default-font !important;
 }
 .top {
@@ -91,9 +93,9 @@ a[class*="siteNavLink-"] {
   color: #fff;
   background-color: #5b6f4e;
   font-family: $pioneer-default-font;
-  font-size: 14px;
+  font: 400 16px/20px $pioneer-default-font;
   line-height: 20px;
   font-weight: 400;
-  max-width: 90%;
+  max-width: 86%;
   margin: 0 auto;
 }
