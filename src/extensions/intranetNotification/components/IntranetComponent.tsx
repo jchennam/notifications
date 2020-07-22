@@ -64,7 +64,7 @@ export default class IntranetComponent extends React.Component<
   }
 
   private getItemsFromSP() {
-    let myWeb = new Web("https://m365x830159.sharepoint.com/");
+    let myWeb = new Web("https://pxdprd.sharepoint.com/");
 
     let currentTime = moment(new Date());
     let items = [];
