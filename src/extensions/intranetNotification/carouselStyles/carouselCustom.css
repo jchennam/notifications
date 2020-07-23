@@ -1,2 +1,8 @@
-.carousel .slide{ background-color: #5b6f4e;}
-.carousel .control-dots{text-align: right; margin-top: 0;}
+.carousel .slide {
+  background-color: #5b6f4e;
+}
+.carousel .control-dots {
+  text-align: right;
+  margin-top: 0;
+  right: 35px;
+}
